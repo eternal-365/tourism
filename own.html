@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Welcome to website
+    </title>
+    <link rel="stylesheet" href="own.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="sectionHome">
+      <div class="bg-container d-flex flex-column justify-content-end">
+        <div class="tourism-card">
+          <h1 class="main-heading">Tourism</h1>
+          <p class="paragraph">Plan your trip.</p>
+          <button class="button" onclick="display('sectionFavouritePlaces')">
+            Get Started
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="sectionFavouritePlaces">
+      <div class="favourite-places-bg-container">
+        <h1 class="favourite-places-heading">Favourite Places</h1>
+        <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionTajMahalDetailedView')">
+          <div>
+            <h1 class="favourite-place-card-heading">Taj Mahal</h1>
+            <p class="favourite-place-card-description">
+              If there was just one symbol to represent all of India, it would
+              be the Taj Mahal
+            </p>
+            <p>
+              Click Here To Know More
+            </p>
+          </div>
+          <img
+            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-img.png"
+            class="favourite-place-card-image"
+          />
+        </div>
+        <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectiongoldenDetailedView')">
+          <div>
+            <h1 class="favourite-place-card-heading">Golden Temple</h1>
+            <p class="favourite-place-card-description">
+              Amritsar is world-famous for the beautiful and highly revered
+              Golden Temple
+            </p>
+            <p>
+              Click Here To Know More
+            </p>
+          </div>
+          <img
+            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/golden-temple-img.png"
+            class="favourite-place-card-image"
+          />
+        </div>
+        <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionmysorepalaceDetailedView')">
+          <div>
+            <h1 class="favourite-place-card-heading">Mysore Palace</h1>
+            <p class="favourite-place-card-description">
+              The Mysore Palace is a historical palace and the royal residence
+              at Mysore .
+            </p>
+            <p>
+              Click Here To Know More
+            </p>
+          </div>
+          <img
+            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace-img.png"
+            class="favourite-place-card-image"
+          />
+        </div>
+        <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionvarnasiDetailedView')">
+          <div>
+            <h1 class="favourite-place-card-heading">Varanasi Temple</h1>
+            <p class="favourite-place-card-description">
+              Varanasi Temple is most famous Hindu temples dedicated to Lord
+              Shiva
+            </p>
+            <p>
+              Click Here To More
+            </p>
+          </div>
+          <img
+            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/varanasi-temple-img.png"
+            class="favourite-place-card-image"
+          />
+        </div>
+        <button class="btn btn-dark" onclick="display('sectionHome')">
+          back
+        </button>
+      </div>
+    </div>
+    <div id="sectionTajMahalDetailedView">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">Detailed View of Taj Mahal</h1>
+        <div class="detailed-view-card-container">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/49HTIoCccDY?rel=0" allowfullscreen></iframe>
+          </div>
+          <div class="detailed-view-card-text-container">
+            <h1 class="detailed-view-card-heading">Taj Mahal</h1>
+            <p class="detailed-view-card-description">
+              The Taj Mahal is considered to be the greatest architectural
+              achievement in the whole range of Indo-Islamic architecture. Its
+              recognised architectonic beauty has a rhythmic combination of
+              solids and voids, concave and convex and light shadow; such as
+              arches and domes further increases the aesthetic aspect. Not a
+              piece of architecture, as other buildings are, but the proud
+              passions of an emperor’s love wrought in living stones.
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+          back
+        </button>
+      </div>
+    </div>
+    <div >
+      <div id="sectiongoldenDetailedView">
+        <div class="detailed-view-bg-container">
+          <h1 class="detailed-view-heading">Detailed View of Golden Temple</h1>
+          <div class="detailed-view-card-container">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HWuRpzdoVa4?rel=0" allowfullscreen></iframe>
+            </div>
+            <div class="detailed-view-card-text-container">
+              <h1 class="detailed-view-card-heading">Golden Temple</h1>
+              <p class="detailed-view-card-description">
+                The Golden temple is famous for its full golden dome, it is one of the most sacred pilgrim spots for Sikhs. 
+                The Mandir is built on a 67-ft square of marble and is a two storied structure.
+                Maharaja Ranjit Singh had the upper half of the building built with approximately 400 kg of gold leaf.
+                The Golden Temple Timings on all days of the week is between 05:00 am and 10:00 pm. 
+                The Amritsar Airport is about 13 kilometre from the Golden Temple, 
+                while the Amritsar Junction Railway Station is less than 2 kilometre from the shrine.
+              </p>
+            </div>
+          </div>
+          <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+            back
+          </button>
+        </div>
+      </div>
+    </div>
+    <div >
+      <div id="sectionmysorepalaceDetailedView">
+        <div class="detailed-view-bg-container">
+          <h1 class="detailed-view-heading">Detailed View of Mysore Palace</h1>
+          <div class="detailed-view-card-container">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aQLZ8LRBKp4?rel=0" allowfullscreen></iframe>
+            </div>
+            <div class="detailed-view-card-text-container">
+              <h1 class="detailed-view-card-heading">Mysore Palace</h1>
+              <p class="detailed-view-card-description">
+                The family ruled the area from 1399, when they first lived in a palace at Mysore, and the city became the kingdom's capital in 1799. 
+                While it is believed that the palace originally was built no later than 1574,
+                the first recorded mention of a palace on the current site was in 1638.
+                The best time to visit the palace is around the time of Dussehra when the entire compound is beautifully decorated and lit, illuminated in a golden hue. 
+                The palace is lit every Sunday and on all public holidays.
+
+              </p>
+            </div>
+          </div>
+          <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+            back
+          </button>
+        </div>
+      </div>
+    </div>
+    <div >
+      <div id="sectionvarnasiDetailedView">
+        <div class="detailed-view-bg-container">
+          <h1 class="detailed-view-heading">Detailed View of Varnisi Temple</h1>
+          <div class="detailed-view-card-container">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YThPs2JJ0Ig?rel=0" allowfullscreen></iframe>
+            </div>
+            <div class="detailed-view-card-text-container">
+              <h1 class="detailed-view-card-heading">Varnasi Temple</h1>
+              <p class="detailed-view-card-description">
+                Varanasi is one of the world's oldest continually inhabited cities.[21] Kashi, its ancient name, was associated with a kingdom of the same name of 2,500 years ago. 
+                The Lion capital of Ashoka at nearby Sarnath has been interpreted to be a commemoration of the Buddha's first sermon there in the fifth century BCE.[22][23] In the 8th century, 
+                Adi Shankara established the worship of Shiva as an official sect of Varanasi. Tulsidas wrote his Awadhi language epic, the Ramcharitmanas, 
+                a Bhakti movement reworking of the Sanskrit Ramayana, in Varanasi. Several other major figures of the Bhakti movement were born in Varanasi, including Kabir and Ravidas.[24] In the 16th century, 
+                Rajput nobles in the service of the courts and armies of the Mughal emperor Akbar, sponsored the building or further enhancement of the major Shiva temple in the city; they also built other temples, 
+                all displaying an empire-wide architectural style.
+              </p>
+            </div>
+          </div>
+          <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+            back
+          </button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+  </body>
+</html>
